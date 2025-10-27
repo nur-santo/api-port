@@ -1,7 +1,7 @@
 ## API-PORT
 ---
 
-# Supabase Edge Function — Image AI Proxy API
+# Supabase Edge Function - Image AI Proxy API
 
 Proxy API berbasis **Supabase Edge Function** yang menghubungkan aplikasi kamu ke berbagai layanan AI image seperti **Picsart** dan **AILab**, untuk melakukan manipulasi gambar (remove background, filter, hair style, dll.) dengan aman melalui satu endpoint.
 
