@@ -1,7 +1,6 @@
-// Supabase Edge Function Proxy API
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2";
-// Init Supabase client
+
 const supabase = createClient(Deno.env.get("SUPABASE_URL"), Deno.env.get("SUPABASE_SERVICE_ROLE_KEY"));
 const API_MAP = {
   // PICSART
@@ -9,14 +8,14 @@ const API_MAP = {
   filter: "https://api.picsart.io/tools/1.0/effects",
   cartoon: "https://api.picsart.io/tools/1.0/effects/ai",
   upscale: "https://api.picsart.io/tools/1.0/upscale",
-  // API MARKET / AI LAB
+  // AI LAB API
   hair2: "https://www.ailabapi.com/api/portrait/effects/hairstyle-editor",
   hair: "https://www.ailabapi.com/api/portrait/effects/hairstyle-editor",
   skin: "https://www.ailabapi.com/api/portrait/effects/face-beauty",
   makeup: "https://www.ailabapi.com/api/portrait/effects/face-makeup",
   light: "https://www.ailabapi.com/api/image/enhance/image-color-enhancement"
 };
-// 🔹 Taruh di luar switch
+
 const HAIR_STYLE_MAP = {
   "Bangs": "101",
   "Long hair": "201",
@@ -252,7 +251,6 @@ Deno.serve(async (req)=>{
     }), {
       status: jobRes.status
     });
-    // 🔹 Simpan hasil ke Supabase
     const blob = await jobRes.blob();
     const filename = `${fitur}-${Date.now()}.png`;
     const buffer = new Uint8Array(await blob.arrayBuffer());
@@ -266,7 +264,7 @@ Deno.serve(async (req)=>{
       status: 500
     });
     const { data: { publicUrl } } = supabase.storage.from("image").getPublicUrl(filename);
-    // 🔹 Hanya kirim URL
+
     return new Response(JSON.stringify({
       url: publicUrl
     }), {
