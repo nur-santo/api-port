@@ -69,7 +69,7 @@ POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/ai-proxy
   "fitur": "filter",
   "img_url": "https://example.com/photo.jpg",
   "data": {
-    "jenis": "fx_flare"
+    "jenis": "1972"
   }
 }
 ```
@@ -90,23 +90,23 @@ POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/ai-proxy
 
 Daftar style yang tersedia:
 
-| Style Name           | Code |
-| -------------------- | ---- |
-| Bangs                | 101  |
-| Long hair            | 201  |
-| Bangs with long hair | 301  |
-| Medium hair increase | 401  |
-| Light hair increase  | 402  |
-| Heavy hair increase  | 403  |
-| Light curling        | 502  |
-| Heavy curling        | 503  |
-| Short hair           | 603  |
-| Blonde               | 801  |
-| Straight hair        | 901  |
-| Oil-free hair        | 1001 |
-| Hairline fill        | 1101 |
-| Smooth hair          | 1201 |
-| Fill hair gap        | 1301 |
+| Style Name           | 
+| -------------------- | 
+| Bangs                |
+| Long hair            |
+| Bangs with long hair |
+| Medium hair increase |
+| Light hair increase  |
+| Heavy hair increase  |
+| Light curling        |
+| Heavy curling        |
+| Short hair           |
+| Blonde               |
+| Straight hair        |
+| Oil-free hair        |
+| Hairline fill        |
+| Smooth hair          |
+| Fill hair gap        |
 
 ---
 
