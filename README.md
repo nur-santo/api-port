@@ -10,12 +10,12 @@ Proxy API berbasis **Supabase Edge Function** yang menghubungkan aplikasi kamu k
 ## Endpoint
 
 ```
-POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/ai-proxy
+POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/api-port
 ```
 
 > 🔹 Ganti `<YOUR_SUPABASE_PROJECT>` dengan project URL kamu.
 > Contoh:
-> `https://myproject.supabase.co/functions/v1/ai-proxy`
+> `https://myproject.supabase.co/functions/v1/api-port`
 
 ---
 
@@ -192,7 +192,7 @@ Pastikan kamu sudah membuat bucket publik bernama `image` di **Supabase Storage*
 ## Quick Test (cURL)
 
 ```bash
-curl -X POST "https://<YOUR_PROJECT>.functions.supabase.co/ai-proxy" \
+curl -X POST "https://<YOUR_PROJECT>.functions.supabase.co/api-port" \
   -H "Content-Type: application/json" \
   -d '{
     "fitur": "removebg",
