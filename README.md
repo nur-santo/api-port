@@ -172,8 +172,8 @@ Tambahkan variabel berikut di **Supabase Edge Function Settings**:
 | --------------------------- | ---------------------------------------------------------------------- |
 | `SUPABASE_URL`              | URL Project Supabase                                              |
 | `SUPABASE_SERVICE_ROLE_KEY` | Kunci service role Supabase                                            |
-| `PICSART_API_KEY`           | API Key dari [Picsart Developer Portal](https://developers.picsart.io) |
-| `AILAB_API_KEY`             | API Key dari [AILab API](https://www.ailabapi.com/)                    |
+| `PICSART_API_KEY`           | API Key dari [Picsart Developer Portal](https://docs.picsart.io) |
+| `AILAB_API_KEY`             | API Key dari [AILab API](https://www.ailabtools.com/docs/introduction)                    |
 
 ---
 
