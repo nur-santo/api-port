@@ -13,7 +13,7 @@ Proxy API berbasis **Supabase Edge Function** yang menghubungkan aplikasi kamu k
 POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/api-port
 ```
 
-> 🔹 Ganti `<YOUR_SUPABASE_PROJECT>` dengan project URL kamu.
+> Ganti `<YOUR_SUPABASE_PROJECT>` dengan project URL kamu.
 > Contoh:
 > `https://myproject.supabase.co/functions/v1/api-port`
 
@@ -43,9 +43,9 @@ POST https://<YOUR_SUPABASE_PROJECT>.functions.supabase.co/api-port
 
 | Field     | Tipe     | Wajib | Deskripsi                                             |
 | --------- | -------- | ----- | ----------------------------------------------------- |
-| `fitur`   | `string` | ✅     | Nama fitur yang ingin digunakan (lihat tabel di atas) |
-| `img_url` | `string` | ✅     | URL publik gambar yang akan diproses                  |
-| `data`    | `object` | ❌     | Data tambahan (bergantung pada fitur)                 |
+| `fitur`   | `string` | Wajib     | Nama fitur yang ingin digunakan (lihat tabel di atas) |
+| `img_url` | `string` | Wajib     | URL publik gambar yang akan diproses                  |
+| `data`    | `object` | Opsional     | Data tambahan (bergantung pada fitur)                 |
 
 ---
 
